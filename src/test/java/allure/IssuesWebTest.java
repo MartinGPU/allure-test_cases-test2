@@ -3,6 +3,7 @@ package allure;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
 
+@Feature("Issues")
 public class IssuesWebTest {
 
     private static final String OWNER = "allure-framework";
