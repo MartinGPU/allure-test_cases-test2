@@ -3,6 +3,8 @@ package allure;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
 
+import static io.qameta.allure.Allure.step;
+
 @Feature("Issues")
 public class IssuesWebTest {
 
@@ -19,7 +21,11 @@ public class IssuesWebTest {
     }
 
     @Test
+    @AllureId("23862")
+    @DisplayName("create issue")
     @Story("Create new issue")
+    @Owner("allure8")
+    @Feature("Issues")
     public void shouldCreateIssue() {
         steps.openIssuesPage(OWNER, REPO);
         steps.createIssueWithTitle(ISSUE_TITLE);
@@ -27,7 +33,11 @@ public class IssuesWebTest {
     }
 
     @Test
-    @Story("Create new issue")
+    @AllureId("23864")
+    @DisplayName("add label")
+    @Story("Add label to issue")
+    @Owner("allure8")
+    @Feature("Issues")
     public void shouldAddLabelToIssue() {
         steps.openIssuesPage(OWNER, REPO);
         steps.createIssueWithTitle(ISSUE_TITLE);
@@ -35,7 +45,11 @@ public class IssuesWebTest {
     }
 
     @Test
+    @AllureId("23859")
+    @DisplayName("close issue")
     @Story("Close existing issue")
+    @Owner("allure8")
+    @Feature("Issues")
     public void shouldCloseIssue() {
         steps.openIssuesPage(OWNER, REPO);
         steps.createIssueWithTitle(ISSUE_TITLE);
