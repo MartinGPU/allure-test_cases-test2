@@ -3,7 +3,7 @@ plugins {
     id("io.qameta.allure") version "2.9.4"
 }
 
-group = "io.eroshenkoam"
+group = "io.allure8"
 version = version
 
 allure {
@@ -30,14 +30,11 @@ tasks.withType(JavaCompile::class) {
 tasks.withType(Test::class) {
     ignoreFailures = true
     useJUnitPlatform {
-
     }
     systemProperty("junit.jupiter.execution.parallel.enabled", "true")
     systemProperty("junit.jupiter.execution.parallel.config.strategy", "dynamic")
-
     systemProperty("junit.jupiter.extensions.autodetection.enabled", "true")
 }
-
 
 repositories {
     mavenCentral()
@@ -50,4 +47,6 @@ dependencies {
     implementation("org.junit.jupiter:junit-jupiter-api:5.7.2")
     implementation("org.junit.jupiter:junit-jupiter-engine:5.7.2")
     implementation("org.junit.jupiter:junit-jupiter-params:5.7.2")
+    implementation("com.codeborne:selenide:6.10.3")
 }
+
