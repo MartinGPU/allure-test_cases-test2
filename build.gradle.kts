@@ -48,5 +48,6 @@ dependencies {
     implementation("org.junit.jupiter:junit-jupiter-engine:5.7.2")
     implementation("org.junit.jupiter:junit-jupiter-params:5.7.2")
     implementation("com.codeborne:selenide:6.10.3")
+    implementation("io.qameta.allure:allure-selenide:2.20.1")
 }
 
