@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.TYPE})
 @Repeatable(JiraIssues.class)
-@LabelAnnotation(name = "jira")
+@LabelAnnotation(name = "jira", value = "HOMEWORK-774")
 public @interface JiraIssue {
 
     String value();
