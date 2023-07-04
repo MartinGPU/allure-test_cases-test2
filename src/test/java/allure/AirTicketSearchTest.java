@@ -12,6 +12,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @Layer("web_ui_2")
+@Owner("Petrov")
 public class AirTicketSearchTest extends TestBase {
 
     @Test
