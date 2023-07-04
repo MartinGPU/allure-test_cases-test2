@@ -10,7 +10,7 @@ public class TestBase {
 
     @BeforeAll
     public static void beforeAll() {
-        Configuration.browserVersion = System.getProperty("version", "98");
+        Configuration.browserVersion = System.getProperty("version", "114");
         Configuration.browserSize = System.getProperty("size", "1366x900");
         Configuration.browser = System.getProperty("browser", "firefox");
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
