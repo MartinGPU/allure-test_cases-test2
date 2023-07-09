@@ -19,7 +19,7 @@ public class BusTicketSearchTest extends TestBase {
     @Story("Search bus ticket")
     @Owner("allure8")
     @Microservice("first service")
-    @JiraIssue("HOMEWORK-774")
+    @JiraIssues({@JiraIssue("HOMEWORK-774")})
     @Feature("Search ticket")
     public void searchBusTicket() {
         step("Open main page", () -> {

@@ -21,7 +21,7 @@ public class AirTicketSearchTest extends TestBase {
     @Story("Search air ticket")
     @Owner("allure8")
     @Microservice("second service")
-    @JiraIssue("HOMEWORK-774")
+    @JiraIssues({@JiraIssue("HOMEWORK-774")})
     @Feature("Search ticket")
     public void searchAirTicket() {
         step("Open main page", () -> {
